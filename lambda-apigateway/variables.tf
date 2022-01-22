@@ -1,0 +1,9 @@
+variable "env-name" {}
+variable "apigateway-api-name" {}
+variable "apigateway-route-key-method" {}
+variable "lambda-function-name" {}
+variable "lambda-function-handler" {}
+variable "lambda-function-runtime" {}
+variable "lambda-function-memory-size" {}
+variable "lambda-function-timeout" {}
+variable "lambda-iam-name" {}
