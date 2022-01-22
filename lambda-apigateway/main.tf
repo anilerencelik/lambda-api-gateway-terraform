@@ -112,3 +112,10 @@ resource "aws_iam_role_policy_attachment" "lambda_logs" {
   role       = aws_iam_role.lambda-iam.name
   policy_arn = aws_iam_policy.lambda_logging.arn
 }
+
+resource "aws_apigatewayv2_api_mapping" "example" {
+  api_id          = aws_apigatewayv2_api.lambda-api.id
+  domain_name     = var.apigateway-domain-name
+  stage           = aws_apigatewayv2_stage.lambda-stage.id
+  api_mapping_key = var.api-domain-name-prefix-path
+}

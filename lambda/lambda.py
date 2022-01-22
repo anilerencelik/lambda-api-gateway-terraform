@@ -1,4 +1,5 @@
 import json
 
 def lambda_handler(event, context):
-    print("Welcome to terraform")
+    message = 'Hello from Lambda3!'
+    return {'body': message}

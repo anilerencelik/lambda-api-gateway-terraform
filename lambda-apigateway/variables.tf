@@ -7,3 +7,5 @@ variable "lambda-function-runtime" {}
 variable "lambda-function-memory-size" {}
 variable "lambda-function-timeout" {}
 variable "lambda-iam-name" {}
+variable "apigateway-domain-name" {}
+variable "api-domain-name-prefix-path" {}

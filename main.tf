@@ -13,4 +13,6 @@ module "lambda-apigateway" {
   lambda-function-memory-size = 512
   lambda-function-timeout     = 15
   lambda-iam-name             = "lambda-iam"
+  apigateway-domain-name      = "api-ohio.kidly.world"
+  api-domain-name-prefix-path = "test"
 }
